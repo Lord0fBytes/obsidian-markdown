@@ -14,4 +14,9 @@ Added Theme support for [draccula](https://draculatheme.com/) for now
 ### This is a work-in-progress app, but will be under active development
 
 ### TODO:
-- [ ] Coming soon
+- [ ] Link support
+- [ ] Image support optimization
+- [ ] Better code blocks
+- [ ] Task list support
+- [ ] More horizontal bar support
+- [ ] Comments support
