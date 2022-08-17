@@ -1,0 +1,143 @@
+:root {
+	--background: #282A36;
+	--foreground: #F8F8F2;
+	--selection: #44475A:
+	--comment: #6272A4;
+	--red: #FF5555;
+	--orange: #FFB86C;
+	--yellow: #F1FA8C;
+	--green: #50FA7B;
+	--purple: #BD93F9;
+	--cyan: #8BE9FD;
+	--pink: #FF79C6;
+}
+
+html,
+body {
+	background-image: none !important;
+	background-color: var(--background) !important;
+}
+
+body * {
+	color: var(--foreground);
+	background-color: var(--background) !important;
+}
+
+a,
+a * {
+	color: var(--cyan) !important;
+	background-color: transparent !important;
+}
+
+a:hover,
+a:hover *,
+a:visited:hover,
+a:visited:hover *,
+span[onclick]:hover,
+div[onclick]:hover,
+[role="link"]:hover,
+[role="link"]:hover *,
+[role="button"]:hover *,
+[role="menuitem"]:hover,
+[role="menuitem"]:hover *,
+.link:hover,
+.link:hover * {
+	color: var(--yellow) !important;
+}
+
+a:visited,
+a:visited * {
+	color: var(--selection) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[id*="headline"],
+[class*="headline"],
+[id*="header"],
+[class*="header"],
+[class*="header"] td {
+	color: var(--purple)  !important;
+	font-weight: bold;
+}
+
+b,
+strong {
+	color: var(--orange) !important;
+	font-weight: bold;
+}
+
+table {
+	background-color: rgba(40, 42, 54, 1) !important;
+}
+
+[id*="overlay"],
+[id*="lightbox"],
+blockquote {
+	background-color: rgba(241, 250, 140,0.2) !important;
+	font-style: italic;
+}
+
+pre,
+dl {
+	color: var(--orange) !important;
+	background-color: var(--comment) !important;
+}
+
+ins {
+	color: var(--background) !important
+	background-color: var(--pink) !important;
+}
+
+input,
+select,
+button,
+[role="button"],
+a.button,
+a.submit,
+a.BigButton,
+a.TabLink,
+.install[onclick] {
+	text-indent: 5px;
+	appearance: none !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	background: var(--selection) !important;
+}
+
+textarea {
+	appearance: none !important;
+	-moz-appearance: none !important;
+	-webkit-appearance: none !important;
+	background: var(--comment) !important;
+}
+
+div,
+ul,
+li {
+	background-image: none !important;
+}
+
+a.highlight,
+a.highlight *,
+a.active,
+a.active *,
+.selected,
+.selected *,
+[href="#"] {
+	font-weight: bold !important;
+	color: var(--cyan) !important;
+}
+
+.toc ul  { padding: 0 12px; }
+.toc h3  { color: var(--cyan) ; border-bottom:1px dotted  grey }
+.toc .H1 { list-style-type:none; font-weight:600; margin:4px; background:#eee }
+.toc .H2 { list-style-type:none; font-weight:600; margin:4px; }
+.toc .H3 { margin-left:2em }
+.toc .H4 { margin-left:4em }
+.toc .active { color: var(--cyan);  }
+.toc li:hover { background-color: var(--selection) !important; }
