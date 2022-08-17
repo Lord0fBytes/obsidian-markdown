@@ -98,15 +98,12 @@
     mdstr = mdstr.replace(/<\/[ou]l\>\n<[ou]l\>/g, '\n' )
     mdstr = mdstr.replace(/<\/[ou]l\>\n<[ou]l\>/g, '\n' )
                   
-    // text decoration: bold, italic, underline, strikethrough, highlight                
-    mdstr = mdstr.replace(/\*\*\*(\w.*?[^\\])\*\*\*/gm, '<b><em>$1</em></b>')
-    mdstr = mdstr.replace(/\*\*(\w.*?[^\\])\*\*/gm, '<b>$1</b>')
+    // text decoration: bold, italic, underline, strikethrough, highlight     
+    mdstr = mdstr.replace(/\*\*(\w.*?[^\\])\*\*/gm, '<strong>$1</strong>')
     mdstr = mdstr.replace(/\*(\w.*?[^\\])\*/gm, '<em>$1</em>')
-    mdstr = mdstr.replace(/___(\w.*?[^\\])___/gm, '<b><em>$1</em></b>')
-    mdstr = mdstr.replace(/__(\w.*?[^\\])__/gm, '<u>$1</u>')
-    // mdstr = mdstr.replace(/_(\w.*?[^\\])_/gm, '<u>$1</u>')  // NOT support!! 
-    mdstr = mdstr.replace(/\^\^\^(.+?)\^\^\^/gm, '<mark>$1</mark>')
-    mdstr = mdstr.replace(/\^\^(\w.*?)\^\^/gm, '<ins>$1</ins>')
+    mdstr = mdstr.replace(/__(\w.*?[^\\])__/gm, '<b>$1</b>')
+    mdstr = mdstr.replace(/_(\w.*?[^\\])_/gm, '<i>$1</i>')
+    mdstr = mdstr.replace(/==(.+?)\==/gm, '<mark>$1</mark>')
     mdstr = mdstr.replace(/~~(\w.*?)~~/gm, '<del>$1</del>')
                   
     // line break and paragraph => <br/> <p>                
