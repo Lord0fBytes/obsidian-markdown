@@ -88,8 +88,8 @@ dl {
 	background-color: var(--comment) !important;
 }
 
-ins {
-	color: var(--background) !important
+mark {
+	color: var(--background) !important;
 	background-color: var(--pink) !important;
 }
 
