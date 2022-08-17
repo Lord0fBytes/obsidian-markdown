@@ -60,8 +60,9 @@
     // horizontal rule => <hr> 
     mdstr = mdstr.replace(/^-{3,}|^\_{3,}|^\*{3,}$/gm, '<hr>').replace(/\n\n<hr\>/g, '\n<br><hr>')
 
-    // header => <h1>..<h5> 
-    mdstr = mdstr.replace(/^##### (.*?)\s*#*$/gm, '<h5>$1</h5>')
+    // header => <h1>..<h6> 
+    mdstr = mdstr.replace(/^###### (.*?)\s*#*$/gm, '<h6>$1</h6>')
+              .replace(/^##### (.*?)\s*#*$/gm, '<h5>$1</h5>')
               .replace(/^#### (.*?)\s*#*$/gm, '<h4>$1</h4>')
               .replace(/^### (.*?)\s*#*$/gm, '<h3>$1</h3>')
               .replace(/^## (.*?)\s*#*$/gm, '<h2>$1</h2>')
