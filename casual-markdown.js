@@ -65,8 +65,8 @@
               .replace(/^##### (.*?)\s*#*$/gm, '<h5>$1</h5>')
               .replace(/^#### (.*?)\s*#*$/gm, '<h4>$1</h4>')
               .replace(/^### (.*?)\s*#*$/gm, '<h3>$1</h3>')
-              .replace(/^## (.*?)\s*#*$/gm, '<h2>$1</h2>')
-              .replace(/^# (.*?)\s*#*$/gm, '<h1>$1</h1>')
+              .replace(/^## (.*?)\s*#*$/gm, '<h2>$1</h2><hr>')
+              .replace(/^# (.*?)\s*#*$/gm, '<h1>$1</h1><hr>')
               .replace(/^<h(\d)\>(.*?)\s*{(.*)}\s*<\/h\d\>$/gm, '<h$1 id="$3">$2</h$1>')
         
     // inline code-block: `code-block` => <code>code-block</code>    
