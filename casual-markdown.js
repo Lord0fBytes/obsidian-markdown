@@ -80,8 +80,8 @@
     mdstr = mdstr.replace(/<\/blockquote\>\n<br\><blockquote\>/g, '\n<br>' )
                   
     // image syntax: ![title](url) => <img alt="title" src="url" />          
-    mdstr = mdstr.replace(/!\[(.*?)\]\((.*?) "(.*?)"\)/gm, '<img alt="$1" src="$2" $3 />')
-    mdstr = mdstr.replace(/!\[(.*?)\]\((.*?)\)/gm, '<img alt="$1" src="$2" width="90%" />')
+    mdstr = mdstr.replace(/!\[(.*?)\|(.*?)\]\((.*?)\)/gm, '<img alt="$1" src="$3" width="$2" />')
+    mdstr = mdstr.replace(/!\[(.*?)\]\((.*?)\)/gm, '<img alt="$1" src="$2" width="100%" />')
                   
     // links syntax: [title "title"](url) => <a href="url" title="title">text</a>          
     mdstr = mdstr.replace(/\[(.*?)\]\((.*?) "new"\)/gm, '<a href="$2" target=_new>$1</a>')
