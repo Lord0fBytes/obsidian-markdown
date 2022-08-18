@@ -1,4 +1,4 @@
-# obsidian-makrdown
+# obsidian-markdown
 JS Based Obsidian markdown interpreter for Webpages
 
 ### Forked from [casual-markdown](https://github.com/casualwriter/casual-markdown)
