@@ -43,11 +43,12 @@ div[onclick]:hover,
 .link:hover,
 .link:hover * {
 	color: var(--yellow) !important;
+	text-decoration: underline;
 }
 
 a:visited,
 a:visited * {
-	color: var(--selection) !important;
+	color: var(--cyan) !important;
 }
 
 h1,
